@@ -65,15 +65,15 @@ function Footer() {
                     <Container>
                         <Row>
                             <Col md={12}>
-                                <p>Sparesbox - Auto Parts, Car Care and 4x4 Accessories</p>
+                                <p>Digital Parts Platform - Auto Parts, Car Care and 4x4 Accessories</p>
                             </Col>
                             <Col md={2}>
                                 <h6 className='footertitle mb-3'>About Us</h6>
                                 <ul className='footer-nav'>
                                     <li><a href='#0'>About Us</a></li>
-                                    <li><a href='#0'>Sparesbox Blog</a></li>
+                                    <li><a href='#0'>Digital Parts Platform Blog</a></li>
                                     <li><a href='#0'>Privacy Policy</a></li>
-                                    <li><a href='#0'>Sparesbox on Facebook</a></li>
+                                    <li><a href='#0'>Digital Parts Platform on Facebook</a></li>
                                     <li><a href='#0'>Terms and Conditions</a></li>
                                     <li><a href='#0'>Pay Over Time with Afterpay</a></li>
                                     <li><a href='#0'>Zip Pay</a></li>
@@ -159,7 +159,7 @@ function Footer() {
                         </Row>
                         <Row>
                             <Col md={12}>
-                                <div className='copy-info text-center'>© 2021 Sparesbox. All Rights Reserved. ABN 15 168 552 323</div>
+                                <div className='copy-info text-center'>© 2021 Digital Parts Platform. All Rights Reserved. ABN 15 168 552 323</div>
                             </Col>
                         </Row>
                     </Container>

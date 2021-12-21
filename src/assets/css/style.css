@@ -32,6 +32,12 @@ header {border-bottom: 1px solid #e4e4e4;-webkit-box-shadow: 1px 1px 2px #e4dddd
 .vehicleselectoption li {border-top: none !important;}
 .vehicleselectoption li:nth-child(odd) {background-color: hsla(0,0%,96%,.5);}
 .vehicleselectmodal .modal-body {max-height: calc(100vh - 69px);overflow-y: scroll;}
+.navbar_ul .dropdown-menu {position: relative !important;transform: translate(0px, 0px) !important;border-radius: 0;border: none;padding: 0;}
+.navbar_ul .dropdown-toggle::after{display: none;}
+.navbar_ul .dropdown-item {padding: 0;}
+.navbar_ul .dropdown-toggle {border: none;border-radius: 0;}
+.navbar_ul .btn-check:focus+.btn, .btn:focus {box-shadow: none;}
+.show.dropdown svg.svg-inline--fa.fa-angle-down.fa-w-10 {transform: rotate(180deg);}
 @media (min-width: 992px){
     .search-outer {
         width: 54%;

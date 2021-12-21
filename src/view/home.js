@@ -547,7 +547,7 @@ function Home() {
                                     <div className='pt-3 mb-3 card-title text-center'>
                                         <h5 className='text-muted'>Currently displaying parts for your</h5>
                                         <p className='text-muted'><FontAwesomeIcon icon={faCar} /> 1993 Audi, 80, 1.6 E (B4) 74kw</p>
-                                        <Button variant='primary' size='md' className='btn-block'>Price</Button>
+                                        <Button variant='primary' size='md' className='btn-block' href='search'>Shop Parts</Button>
                                         <hr className='mt-3 mb-2' />
                                         <h6 className='text-muted text-center ClearVehicle' onClick={ClearVehicle}>Clear Vehicle</h6>
                                     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 /* bootstrap */
-import { Container, Row, Col, Button, Modal, Tab, Nav, Accordion } from 'react-bootstrap';
+import { Container, Button, Modal, Dropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* FontAwesome */
@@ -84,33 +84,189 @@ function Header() {
                     <Modal.Title>More about Menu</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <ul className='list-unstyled'>
-                        <li className='p-3'>
-                            <a className='font-size-1000 font-weight-bold ' title='Accessories' href='#0'><span>Accessories<FontAwesomeIcon icon={faAngleDown} /></span></a>
+                    <ul className='list-unstyled navbar_ul'>
+                        <li>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="" id="dropdown-basic" className='d-block w-100 text-left p-3 fw-bold'>
+                                    <span>Accessories<FontAwesomeIcon icon={faAngleDown} /></span>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Action Cams</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Camping &amp; Outdoor Equipment</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Car Audio &amp; In-Car Tech</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Interior &amp; Car Accessories</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Motorsport &amp; Safety Equipment</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Recovery Gear &amp; Equipment</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Stickers &amp; Merchandise</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Towing &amp; Ute Accessories</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>UHF Radios &amp; Communication</li></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </li>
-                        <li className='p-3'>
-                            <a className='font-size-1000 font-weight-bold ' title='Bodywork &amp; Exterior' href='#0'><span>Bodywork &amp; Exterior<FontAwesomeIcon icon={faAngleDown} /></span></a>
+                        <li>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="" id="dropdown-basic" className='d-block w-100 text-left p-3 fw-bold'>
+                                    <span>Bodywork &amp; Exterior<FontAwesomeIcon icon={faAngleDown} /></span>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Body Components</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Car &amp; Bike Covers</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Door Components</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Exterior Accessories</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Exterior Protection</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Paints &amp; Body Repair</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Roof Racks &amp; Roof Boxes</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Vehicle Lighting</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Wheels &amp; Tyres</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Windscreen Wipers &amp; Accessories</li></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </li>
-                        <li className='p-3'>
-                            <a className='font-size-1000 font-weight-bold ' title='Brakes' href='#0'><span>Brakes<FontAwesomeIcon icon={faAngleDown} /></span></a>
+                        <li>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="" id="dropdown-basic" className='d-block w-100 text-left p-3 fw-bold'>
+                                    <span>Brakes<FontAwesomeIcon icon={faAngleDown} /></span>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Brake Boosters</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Brake Calipers & Parts</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Brake Cylinders</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Brake Drums</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Brake Lines</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Brake Pads</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Brake Rotors</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Brake Sensors & ABS Modules</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Brake Sets and Kits</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Brake Shoes</li></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </li>
-                        <li className='p-3'>
-                            <a className='font-size-1000 font-weight-bold ' title='Car Care' href='#0'><span>Car Care<FontAwesomeIcon icon={faAngleDown} /></span></a>
+                        <li>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="" id="dropdown-basic" className='d-block w-100 text-left p-3 fw-bold'>
+                                    <span>Car Care<FontAwesomeIcon icon={faAngleDown} /></span>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Accessories</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Blowers & Dryers</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Bodywork/Exterior</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Car Care Kits</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Interior Cleaning</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Marine</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Polishing Machines & Equipment</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Pressure Washers & High Pressure Cleaners</li></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </li>
-                        <li className='p-3'>
-                            <a className='font-size-1000 font-weight-bold ' title='Electrical' href='#0'><span>Electrical<FontAwesomeIcon icon={faAngleDown} /></span></a>
+                        <li>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="" id="dropdown-basic" className='d-block w-100 text-left p-3 fw-bold'>
+                                    <span>Electrical<FontAwesomeIcon icon={faAngleDown} /></span>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Batteries & Accessories</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Cables, Fuses & Relays</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Globes & Bulbs</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Horns</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Lighting</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Solar</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Voltage Conversion</li></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </li>
-                        <li className='p-3'>
-                            <a className='font-size-1000 font-weight-bold ' title='Engine Oils &amp; Lubricants' href='#0'><span>Engine Oils &amp; Lubricants<FontAwesomeIcon icon={faAngleDown} /></span></a>
+                        <li>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="" id="dropdown-basic" className='d-block w-100 text-left p-3 fw-bold'>
+                                    <span>Engine Oils &amp; Lubricants<FontAwesomeIcon icon={faAngleDown} /></span>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Additives</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Brake Fluid</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Coolant</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Coolant</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Grease</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Motorcycle & Marine Oil</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Power Steering Fluid</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Transmission & Gear Oil</li></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </li>
-                        <li className='p-3'>
-                            <a className='font-size-1000 font-weight-bold ' title='Engine, Cooling &amp; Drivetrain' href='#0'><span>Engine, Cooling &amp; Drivetrain<FontAwesomeIcon icon={faAngleDown} /></span></a>
+                        <li>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="" id="dropdown-basic" className='d-block w-100 text-left p-3 fw-bold'>
+                                    <span>Engine, Cooling & Drivetrain<FontAwesomeIcon icon={faAngleDown} /></span>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Auto Electrical</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Climate Control</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Cooling System</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Engine Components</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Engine Management</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Exhausts</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Forced Induction</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Fuel System</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Ignition System</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Oil System</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Transmission & Drivetrain</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Universal Fittings, Hoses & Accessories</li></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </li>
-                        <li className='p-3'>
-                            <a className='font-size-1000 font-weight-bold ' title='Filters' href='#0'><span>Filters<FontAwesomeIcon icon={faAngleDown} /></span></a>
+                        <li>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="" id="dropdown-basic" className='d-block w-100 text-left p-3 fw-bold'>
+                                    <span>Filters<FontAwesomeIcon icon={faAngleDown} /></span>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Air Filters</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Cabin Filters</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Cold Air Intakes</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Diesel Particulate Filters</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Filter Service Kits</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Fuel Filters</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Motorcycle Filters</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Oil Filters</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Transmission Filters</li></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </li>
-                        <li className='p-3'>
-                            <a className='font-size-1000 font-weight-bold ' title='Steering &amp; Suspension' href='#0'><span>Steering &amp; Suspension<FontAwesomeIcon icon={faAngleDown} /></span></a>
+                        <li>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="" id="dropdown-basic" className='d-block w-100 text-left p-3 fw-bold'>
+                                    <span>Steering &amp; Suspension<FontAwesomeIcon icon={faAngleDown} /></span>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Air Bag Suspension</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Alignment & Strut Bracing</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Anti-Roll/Sway Bars & Accessories</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Bushes & Mounts</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Coilover & Suspension Kits</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Power Steering</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Shock Absorbers & Springs</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Suspension Arms & Joints</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Tie Rod & Steering Rack Components</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Wheel Bearings & Hubs</li></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                        </li>
+                        <li>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="" id="dropdown-basic" className='d-block w-100 text-left p-3 fw-bold'>
+                                    <span>Tools<FontAwesomeIcon icon={faAngleDown} /></span>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Air Tools & Compressors</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Automotive & Specialty</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Bolts & Fasteners</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Diagnostic & Electrical Equipment</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Garage & Workshop Equipment</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Hand Tools</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Motorcycle Tools</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Power Tools</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Tool Kits & Storage</li></Dropdown.Item>
+                                    <Dropdown.Item href="#0"><li className='p-3 ps-5'>Workshop Fluids, Sealants & Fluid Transfer</li></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </li>
                     </ul>
                 </Modal.Body>
@@ -120,10 +276,10 @@ function Header() {
                     <Modal.Title><FontAwesomeIcon icon={faCar} /> My Garage</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <p className='pt-2 ps-3 pe-3'>Add your vehicle details to create a personalised garage on Sparesbox. We use it to refine parts and accessories for you.</p>
+                    <p className='pt-2 ps-3 pe-3'>Add your vehicle details to create a personalised garage on Digital Parts Platform. We use it to refine parts and accessories for you.</p>
                     <div className='ps-3 pe-3 pb-3'><Button variant='primary' size='md' className='btn-block' onClick={() => setSelectVehicleShow(true)}>Select Vehicle</Button></div>
                     <p className='ps-3 pe-3 big fw-bold'>Saved Vehicles</p>
-                    <p className='ps-3 pe-3'>Register for a Sparesbox account now to personalise and save your vehicles to your garage.</p>
+                    <p className='ps-3 pe-3'>Register for a Digital Parts Platform account now to personalise and save your vehicles to your garage.</p>
                     <div className='ps-3 pe-3 pb-3'><Button variant='outline-primary' size='md' className='btn-block'>Register</Button></div>
                     <div className='ps-3 pe-3 pb-3'><Button variant='primary' size='md' className='btn-block'>Continue Shopping</Button></div>
                 </Modal.Body>
